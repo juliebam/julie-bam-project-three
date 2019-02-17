@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kalam" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>The World's Greatest Science Quiz
+    </title>
+</head>
+<body>
+    <h1>Are you smarter than an 8<sup>th</sup> grader?</h1>
+    <p>Science Quiz</p>
+
+    <div class="container flex">
+        <button class="start">Start</button>
+
+        <div class="question-1 hide">
+                <p>Which of the following is not a part of an animal cell?</p>
+                <form class="clearfix">
+                    <div class="answer-box">
+                        <input type="radio" name="biology" id="answer-1" value="incorrect">
+                        <label for="answer-1">A. Mitochodria</label>
+
+                        <input type="radio" name="biology" id="answer-2" value="correct">
+                        <label for="answer-2">B. Cell wall</label>
+
+                        <input type="radio" name="biology" id="answer-3" value="incorrect">
+                        <label for="answer-3">C. Cell membrane</label>
+
+                        <input type="radio" name="biology" id="answer-4" value="incorrect">
+                        <label for="answer-4">D. Nucleus</label>
+                    </div>
+                </form>
+        </div>
+
+        <div class="question-2 hide">
+                <p>You can't live without water! What is its chemical formula?</p>
+                <form class="clearfix">
+                    <div class="answer-box">
+                        <input type="radio" name="chemistry" id="answer-1" value="incorrect">
+                        <label for="answer-1">A. CH<sub>4</sub></label>
+                        <input type="radio" name="chemistry" id="answer-2" value="incorrect">
+                        <label for="answer-2">B. H<sub>2</sub>O<sub>2</sub></label>
+                        <input type="radio" name="chemistry" id="answer-3" value="correct">
+                        <label for="answer-3">C. H<sub>2</sub>O</label>
+                        <input type="radio" name="chemistry" id="answer-4" value="incorrect">
+                        <label for="answer-4">D. O<sub>2</sub></label>
+                    </div>
+                </form>
+        </div>
+
+        <div class="question-3 hide">
+            <p>What is the most common gas in our atmosphere?</p>
+            <form class="clearfix">
+                <div class="answer-box">
+                    <input type="radio" name="earth" id="answer-1" value="incorrect">
+                    <label for="answer-1">A. Oxygen</label>
+                    <input type="radio" name="earth" id="answer-2" value="incorrect">
+                    <label for="answer-2">B. Carbon Dioxide</label>
+                    <input type="radio" name="earth" id="answer-3" value="correct">
+                    <label for="answer-3">C. Nitrogen</label>
+                    <input type="radio" name="earth" id="answer-4" value="incorrect">
+                    <label for="answer-4">D. Methane</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="question-4 hide">
+            <p>The process used by plants to convert light energy to chemical is called?</p>
+            <form class="clearfix">
+                <div class="answer-box">
+                    <input type="radio" name="botany" id="answer-1" value="incorrect">
+                    <label for="answer-1">A. Entropy</label>
+                    <input type="radio" name="botany" id="answer-2" value="incorrect">
+                    <label for="answer-2">B. Mitosis</label>
+                    <input type="radio" name="botany" id="answer-3" value="incorrect">
+                    <label for="answer-3">C. Cellular Respiration</label>
+                    <input type="radio" name="botany" id="answer-4" value="correct">
+                    <label for="answer-4">D. Photosynthesis</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="question-5 hide">
+            <p>Which vitamin is essential for blood clotting?</p>
+            <form class="clearfix">
+                <div class="answer-box">
+                    <input type="radio" name="health" id="answer-1" value="correct">
+                    <label for="answer-1">A. Vitamin K</label>
+                    <input type="radio" name="health" id="answer-2" value="incorrect">
+                    <label for="answer-2">B. Vitamin D</sub></label>
+                    <input type="radio" name="health" id="answer-3" value="incorrect">
+                    <label for="answer-3">C. Vitamin B<sub>12</sub></label>
+                    <input type="radio" name="health" id="answer-4" value="incorrect">
+                    <label for="answer-4">D. Vitamin C</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="results-five hide">
+            <p class="message">Excellent!</p>
+            <p class="score"></p>
+            <button class="retry">Retry</button>
+        </div>
+          
+        <div class="results-four hide">
+            <p class="message">Good Job!</p>
+            <p class="score"></p>
+            <button class="retry">Retry</button>
+        </div>
+            
+        <div class="results-three hide">
+            <p class="message">Average</p>
+            <p class="score"></p>
+            <button class="retry">Retry</button>        
+        </div>
+
+        <div class="results-two hide">
+            <p class="message">Failed</p>
+            <p class="score"></p>
+            <button class="retry">Retry</button> 
+        </div> 
+
+        <div class="results-one hide">
+            <p class="message">Failed</p>
+            <p class="score"></p>
+            <button class="retry">Retry</button> 
+        </div> 
+
+    </div>
+
+   
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+html {
+    font-size: 62.5%;
+        body {
+            background: black;
+            background-size: cover;
+            min-height: 80vh;
+            color: azure;
+            font-size: 2.0rem;
+            text-transform: uppercase;
+            text-align: center;
+                h1 {
+                    font-size: 4.0rem;
+                    margin: 80px 0  20px 0;
+                }
+
+                p {
+                    margin-bottom: 60px;
+                }
+                .container {
+                    background: url(assets/chalkboard-green.jpg) no-repeat;
+                    background-size: cover;
+                    border: 10px solid burlywood;
+                    width: 50%;
+                    height: 400px;
+                    margin: 0 auto;
+                    padding: 10px;
+                }
+                .flex {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+         }
+}
+
+.start {
+    padding: 30px;
+    background-color: #182848;
+    border: none;
+    font-family: 'Fredericka the Great', cursive;
+    color:  #f4f4f0;
+}
+
+.question-1, .question-2, .question-3, .question-4, .question-5, .results-five, .results-four , .results-three, .results-two, .results-one{
+        p {
+            text-transform: none;
+            margin-bottom: 30px;
+            font-family: 'Fredericka the Great', cursive;
+            color:  #f4f4f0;
+            font-size: 2.5rem;
+        }
+}
+
+    
+.answer-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+label {
+    width: 40%;
+    margin: 2px auto;
+    text-transform: none;
+    padding: 10px;
+    color:  #f4f4f0;
+    font-family: 'Kalam', cursive;
+    background: transparent;
+    cursor: pointer;    
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
