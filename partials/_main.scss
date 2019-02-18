@@ -87,6 +87,11 @@ input[type="radio"] {
   display: none;
 }
 
+button.start:focus {
+    background: darkgreen;
+}
+
+
 .hide {
     display: none;
 }
