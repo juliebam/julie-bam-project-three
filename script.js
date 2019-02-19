@@ -12,8 +12,8 @@ $(document).ready(function(){
 
     $('.start').on('click keypress', function(event) {
         if (event.which === 13 || event.type === 'click')
-            $('.start').addClass("hide");
-            $('.question-1').removeClass("hide");
+            $('.start').addClass('hide');
+            $('.question-1').removeClass('hide');
     })
     
     $('label').on('click', function() {
@@ -24,12 +24,12 @@ $(document).ready(function(){
             //Firefox bug??? - when clicking on the answer of the first question, it does not push it into the array , works fine on Chrome and Edge though...
     $('.question-1 label').on('click keypress', function(event) {
         if (event.which === 13 || event.type === 'click')
-            $question1.addClass("hide");
-            $question2.removeClass("hide");
+            $question1.addClass('hide');
+            $question2.removeClass('hide');
         const userAnswer = $('input[name=biology]:checked').val();
         const pressedAnswer = $(this).val();
 
-        if (userAnswer === "correct" || pressedAnswer === "correct" ){
+        if (userAnswer === 'correct' || pressedAnswer === 'correct' ){
             answers.push(userAnswer);
             // answers.push(pressedAnswer);
         }     
@@ -37,11 +37,11 @@ $(document).ready(function(){
 
     $('.question-2 label').on('click keypress', function(event) {
         if (event.which === 13 || event.type === 'click')
-            $question2.addClass("hide");
-            $question3.removeClass("hide");
+            $question2.addClass('hide');
+            $question3.removeClass('hide');
         const userAnswer = $('input[name=chemistry]:checked').val();
         const pressedAnswer = $(this).val();
-        if (userAnswer === "correct" || pressedAnswer === "correct" ){
+        if (userAnswer === 'correct' || pressedAnswer === 'correct' ){
             answers.push(userAnswer);
             // answers.push(pressedAnswer);
         } 
@@ -49,11 +49,11 @@ $(document).ready(function(){
 
     $('.question-3 label').on('click keypress', function(event) {
         if (event.which === 13 || event.type === 'click')
-            $question3.addClass("hide");
-            $question4.removeClass("hide");
+            $question3.addClass('hide');
+            $question4.removeClass('hide');
         const userAnswer = $('input[name=earth]:checked').val();
         const pressedAnswer = $(this).val();
-        if (userAnswer === "correct" || pressedAnswer === "correct" ){
+        if (userAnswer === 'correct' || pressedAnswer === 'correct' ){
             answers.push(userAnswer);
             // answers.push(pressedAnswer);
         } 
@@ -65,7 +65,7 @@ $(document).ready(function(){
             $question5.removeClass("hide");
         const userAnswer = $('input[name=botany]:checked').val();
         const pressedAnswer = $(this).val();
-        if (userAnswer === "correct" || pressedAnswer === "correct" ){
+        if (userAnswer === 'correct' || pressedAnswer === 'correct' ){
             answers.push(userAnswer);
             // answers.push(pressedAnswer);
         } 
@@ -75,7 +75,7 @@ $(document).ready(function(){
         if (event.which === 13 || event.type === 'click');
         const userAnswer = $('input[name=health]:checked').val();
         const pressedAnswer = $(this).val();
-        if (userAnswer === "correct" || pressedAnswer === "correct" ){
+        if (userAnswer === 'correct' || pressedAnswer === 'correct' ){
             answers.push(userAnswer);
             // answers.push(pressedAnswer);
         } 
@@ -84,24 +84,24 @@ $(document).ready(function(){
 
     
         if (numOfCorrectAnswers === 5) {
-            $question5.addClass("hide");
-            $('.results-five').removeClass("hide");
+            $question5.addClass('hide');
+            $('.results-five').removeClass('hide');
             $score.html(`<p>Your score is ${numOfCorrectAnswers} out of 5<p>`);
         } else if (numOfCorrectAnswers === 4){
-            $question5.addClass("hide");
-            $('.results-four').removeClass("hide");
+            $question5.addClass('hide');
+            $('.results-four').removeClass('hide');
             $score.html(`<p>Your score is ${numOfCorrectAnswers} out of 5<p>`);
         } else if (numOfCorrectAnswers === 3){
-            $question5.addClass("hide");
-            $('.results-three').removeClass("hide");
+            $question5.addClass('hide');
+            $('.results-three').removeClass('hide');
             $('.score').html(`<p>Your score is ${numOfCorrectAnswers} out of 5<p>`);
         }  else if (numOfCorrectAnswers === 2) {
-            $question5.addClass("hide");
-            $('.results-two').removeClass("hide");
+            $question5.addClass('hide');
+            $('.results-two').removeClass('hide');
             $score.html(`<p>Your score is ${numOfCorrectAnswers} out of 5<p>`);
         } else {
-            $question5.addClass("hide");
-            $('.results-one').removeClass("hide");
+            $question5.addClass('hide');
+            $('.results-one').removeClass('hide');
             $score.html(`<p>Your score is ${numOfCorrectAnswers} out of 5<p>`);
         }
         $('.retry').click(function() {

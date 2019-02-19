@@ -181,6 +181,10 @@ body {
     -ms-flex-align: center;
     align-items: center; }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
 .start {
   padding: 30px;
   font-size: 3.0rem;

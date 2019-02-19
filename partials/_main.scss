@@ -19,6 +19,7 @@ body {
             p {
                 margin-bottom: 60px;
             }
+
             .container {
                 background: url(assets/chalkboard-green.jpg) no-repeat;
                 background-size: cover;
@@ -35,7 +36,11 @@ body {
             }
          }
 
-
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+ }
+ 
 .start {
     padding: 30px;
     font-size: 3.0rem;
